@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/admin.js" defer></script>
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#cropSection">Post Crops</a>
+    <a href="#schemeSection">Post Schemes</a>
+    <a href="#feedbackSection">Feedback</a>
+  </div>
+
+  <h1>Admin Dashboard</h1>
+
+  <!-- Post Crop Section -->
+  <section id="cropSection">
+    <h2>Post Crop Details</h2>
+    <form id="cropForm">
+      <input type="text" id="cropName" placeholder="Crop Name" required />
+      <select id="season" required>
+        <option value="" disabled selected>Choose Season</option>
+        <option value="Rabi">Rabi</option>
+        <option value="Kharif">Kharif</option>
+        <option value="Zaid">Zaid</option>
+      </select>
+      <textarea id="instructions" placeholder="Instructions" required></textarea>
+      <button type="submit">Post Crop Details</button>
+    </form>
+  </section>
+
+  <!-- Post Scheme Section -->
+  <section id="schemeSection">
+    <h2>Post Government Schemes</h2>
+    <form id="schemeForm">
+      <input type="text" id="schemeName" placeholder="Scheme Name" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <button type="submit">Post Scheme</button>
+    </form>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedbackSection">
+    <h2>Feedback</h2>
+    <form id="feedbackForm">
+      <textarea id="feedbackMessage" placeholder="Enter your feedback" rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+</body>
+</html>

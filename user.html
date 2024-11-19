@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/user.js" defer></script>
+  <title>User Dashboard</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#cropSection">View Crops</a>
+    <a href="#schemeSection">View Schemes</a>
+    <a href="#feedbackSection">Feedback</a>
+  </div>
+
+  <h1>User Dashboard</h1>
+
+  <!-- Available Crops Section -->
+  <section id="cropSection">
+    <h2>Available Crops</h2>
+    <div class="dropdown-container">
+      <select id="cropDropdown">
+        <option value="" disabled selected>-- Select a Crop --</option>
+        <option value="Wheat">Wheat</option>
+        <option value="Rice">Rice</option>
+        <option value="Maize">Maize</option>
+        <option value="Soybean">Soybean</option>
+        <option value="Potato">Potato</option>
+        <option value="Tomato">Tomato</option>
+        <option value="Cotton">Cotton</option>
+        <option value="Sugarcane">Sugarcane</option>
+        <option value="Barley">Barley</option>
+        <option value="Millet">Millet</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Available Schemes Section -->
+  <section id="schemeSection">
+    <h2>Available Government Schemes</h2>
+    <div class="dropdown-container">
+      <select id="schemeDropdown">
+        <option value="" disabled selected>-- Select a Scheme --</option>
+        <option value="PM-KISAN">PM-KISAN</option>
+        <option value="Crop Insurance">Crop Insurance</option>
+        <option value="Fertilizer Subsidy">Fertilizer Subsidy</option>
+        <option value="Agricultural Loan Waiver">Agricultural Loan Waiver</option>
+        <option value="Irrigation Scheme">Irrigation Scheme</option>
+        <option value="Kisan Credit Card">Kisan Credit Card</option>
+        <option value="Seed Subsidy">Seed Subsidy</option>
+        <option value="Organic Farming Scheme">Organic Farming Scheme</option>
+        <option value="Horticulture Mission">Horticulture Mission</option>
+        <option value="Soil Health Card">Soil Health Card</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedbackSection">
+    <h2>Feedback</h2>
+    <form id="feedbackForm">
+      <textarea id="feedbackMessage" placeholder="Enter your feedback" rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+</body>
+</html>

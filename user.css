@@ -1,0 +1,99 @@
+/* General Styling for User */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #181C14;
+    color: #FFFFFF;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    background: #1A3636;
+}
+
+.navbar a {
+    color: #47663B;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    color: #1F4529;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #1A3636;
+    border-radius: 10px;
+    max-width: 800px;
+    color: #FFFFFF;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form input, form select, form textarea, form button {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input, form textarea, form select {
+    background: #1F4529;
+    color: #FFFFFF;
+}
+
+form button {
+    background: #47663B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #1F4529;
+}
+
+/* Dropdown Styling for User */
+.dropdown-container {
+    padding: 10px;
+    background: #1A3636;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #1F4529;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive Design for User */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 50px 10px;
+    }
+}

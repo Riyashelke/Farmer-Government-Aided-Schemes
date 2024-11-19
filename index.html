@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="user.css" />
+
+  <title>Farmer Government Aided Schemes</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#login">Login</a>
+    <a href="#feedback">Feedback</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" style="background: #181C14; text-align: center; padding: 50px 20px;">
+    <h1 style="color: #FFFFFF;">Welcome to Farmer Government Aided Schemes</h1>
+    <p style="color: #FFFFFF;">
+      Empowering farmers with access to government schemes, crop details, and agricultural guidance.
+    </p>
+    <div style="margin-top: 20px;">
+      <button onclick="location.href='admin.html'" style="padding: 10px 20px; background-color: #47663B; color: white; border: none; border-radius: 5px;">Admin Dashboard</button>
+      <button onclick="location.href='user.html'" style="padding: 10px 20px; background-color: #47663B; color: white; border: none; border-radius: 5px;">User Dashboard</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Our platform provides farmers with easy access to government-aided schemes, comprehensive crop details, and tailored agricultural advice. 
+      With our intuitive interface, we strive to make agriculture more productive and accessible.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>View detailed crop information and planting guides.</li>
+      <li>Access a wide range of government-aided schemes.</li>
+      <li>Apply for schemes and track the application status.</li>
+      <li>Admin control for posting crops and schemes.</li>
+      <li>User feedback for service improvement.</li>
+    </ul>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login">
+    <h2>Login</h2>
+    <p>Select your role to proceed:</p>
+    <div style="text-align: center;">
+      <button onclick="location.href='admin.html'" style="padding: 10px 20px; background-color: #47663B; color: white; border: none; border-radius: 5px;">Admin</button>
+      <button onclick="location.href='user.html'" style="padding: 10px 20px; background-color: #47663B; color: white; border: none; border-radius: 5px;">User</button>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <p>We value your feedback. Please share your thoughts below:</p>
+    <form id="feedbackForm">
+      <textarea id="feedbackMessage" placeholder="Enter your feedback here..." rows="5" required></textarea>
+      <button type="submit" style="padding: 10px 20px; background-color: #47663B; color: white; border: none; border-radius: 5px;">Submit Feedback</button>
+    </form>
+  </section>
+</body>
+</html>

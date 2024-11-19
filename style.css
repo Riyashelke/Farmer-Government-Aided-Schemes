@@ -1,0 +1,160 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #181C14;
+    color: #FFFFFF;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    background: #1A3636;
+  }
+  
+  .navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+  }
+  
+  .navbar a:hover {
+    color: #1F4529;
+  }
+  
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #1A3636;
+    border-radius: 10px;
+    max-width: 800px;
+    color: #FFFFFF;
+  }
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  form input, form select, form textarea, form button {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form input, form textarea, form select {
+    background: #1F4529;
+    color: #FFFFFF;
+  }
+  
+  form button {
+    background: #47663B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #1F4529;
+  }
+  
+  /* Dropdown Styling */
+  .dropdown-container {
+    padding: 10px;
+    background: #1A3636;
+    border-radius: 5px;
+  }
+  
+  select {
+    background-color: #1F4529;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Admin Page Specific Styling */
+  .admin-section h2 {
+    color: #47663B;
+    border-bottom: 2px solid #47663B;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-section {
+    background: #1A3636;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* User Page Specific Styling */
+  .user-section h2 {
+    color: #47663B;
+    border-bottom: 2px solid #47663B;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .user-section {
+    background: #1A3636;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: #1F4529;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  ul li:hover {
+    background: #47663B;
+  }
+  
+  /* Feedback Section Styling */
+  textarea {
+    resize: none;
+  }
+  
+  .feedback-section {
+    text-align: center;
+  }
+  
+  .feedback-section form button {
+    width: auto;
+    padding: 10px 20px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    section {
+      margin: 50px 10px;
+    }
+  }
+  
